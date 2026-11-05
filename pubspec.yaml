@@ -1,0 +1,52 @@
+name: plastic_classifier_app
+description: A new Flutter project for plastic classification using a FastAPI backend.
+
+# Versi aplikasi ini.
+# Format: major.minor.patch+build_number
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0' # Sesuaikan dengan versi SDK Flutter Anda
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Package untuk komunikasi HTTP ke API FastAPI Anda
+  http: ^1.2.1 
+  
+  # Package untuk memilih gambar dari galeri perangkat
+  image_picker: ^1.1.2 
+
+  google_fonts: ^6.1.0 # Tambahkan baris ini
+
+  # Package ikon yang digunakan secara default
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Package untuk memastikan kode Flutter Anda sesuai dengan panduan
+  flutter_lints: ^3.0.0
+
+# Bagian konfigurasi Flutter
+flutter:
+
+  # Gunakan material design untuk aset dan font yang disertakan
+  uses-material-design: true
+
+  # Untuk menambahkan aset (gambar, font, dll.) ke proyek Anda, 
+  # Anda akan mendefinisikannya di sini.
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+
+  # Untuk menambahkan font khusus ke aplikasi Anda, 
+  # Anda akan mendefinisikannya di sini.
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
